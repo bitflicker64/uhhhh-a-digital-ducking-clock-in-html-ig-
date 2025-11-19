@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="clock"></p>
+</body>
+<script>
+    setInterval(dateshit,1000)
+    function dateshit(){
+        const date = new Date();
+        document.getElementById("clock").innerHTML = date.toLocaleTimeString();
+    }
+    // const n= new Date();
+    // const hr= n.getHours();
+    // const mi=n.getMinutes();
+    // const sec=n.getSeconds();
+    // document.getElementById("clock").innerHTML = hr+":"+mi+":"+sec
+</script>
+</html>
